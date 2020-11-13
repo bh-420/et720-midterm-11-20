@@ -16,6 +16,7 @@ import { ResumeComponent } from "./resume/resume.component";
 import { ExperienceComponent } from "./resume/experience/experience.component";
 import { ProfileComponent } from "./resume/profile/profile.component";
 import { EducationComponent } from "./resume/education/education.component";
+import { GraphicDesignComponent } from "./graphic-design/graphic-design.component";
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { EducationComponent } from "./resume/education/education.component";
       { path: "products/:productId", component: ProductDetailsComponent },
       { path: "cart", component: CartComponent },
       { path: "shipping", component: ShippingComponent },
-      { path: "resume", component: ResumeComponent }
+      { path: "resume", component: ResumeComponent },
+      { path: "graphic", component: GraphicDesignComponent }
     ])
   ],
   declarations: [
@@ -41,7 +43,8 @@ import { EducationComponent } from "./resume/education/education.component";
     ResumeComponent,
     ExperienceComponent,
     ProfileComponent,
-    EducationComponent
+    EducationComponent,
+    GraphicDesignComponent
   ],
   bootstrap: [AppComponent],
   providers: [CartService]
