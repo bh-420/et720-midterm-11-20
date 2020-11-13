@@ -12,6 +12,10 @@ import { ProductDetailsComponent } from "./product-details/product-details.compo
 import { CartService } from "./cart.service";
 import { CartComponent } from "./cart/cart.component";
 import { ShippingComponent } from "./shipping/shipping.component";
+import { ResumeComponent } from "./resume/resume.component";
+import { ExperienceComponent } from "./resume/experience/experience.component";
+import { ProfileComponent } from "./resume/profile/profile.component";
+import { EducationComponent } from "./resume/education/education.component";
 
 @NgModule({
   imports: [
@@ -22,7 +26,8 @@ import { ShippingComponent } from "./shipping/shipping.component";
       { path: "", component: ProductListComponent },
       { path: "products/:productId", component: ProductDetailsComponent },
       { path: "cart", component: CartComponent },
-      { path: "shipping", component: ShippingComponent }
+      { path: "shipping", component: ShippingComponent },
+      { path: "resume", component: ResumeComponent }
     ])
   ],
   declarations: [
@@ -32,7 +37,11 @@ import { ShippingComponent } from "./shipping/shipping.component";
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    ResumeComponent,
+    ExperienceComponent,
+    ProfileComponent,
+    EducationComponent
   ],
   bootstrap: [AppComponent],
   providers: [CartService]
