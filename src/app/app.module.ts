@@ -4,6 +4,26 @@ import { RouterModule } from "@angular/router";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 
+import {
+  AccordionModule,
+  AlertModule,
+  ButtonsModule,
+  CarouselModule,
+  CollapseModule,
+  BsDatepickerModule,
+  BsDropdownModule,
+  ModalModule,
+  OffcanvasModule,
+  PaginationModule,
+  ProgressbarModule,
+  RatingModule,
+  SortableModule,
+  TabsModule,
+  TimepickerModule,
+  TooltipModule,
+  TypeaheadModule
+} from "ngx-foundation";
+
 import { AppComponent } from "./app.component";
 import { TopBarComponent } from "./top-bar/top-bar.component";
 import { ProductListComponent } from "./product-list/product-list.component";
@@ -20,6 +40,7 @@ import { GraphicDesignComponent } from "./graphic-design/graphic-design.componen
 
 @NgModule({
   imports: [
+    AlertModule.forRoot(),
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
@@ -29,7 +50,10 @@ import { GraphicDesignComponent } from "./graphic-design/graphic-design.componen
       { path: "cart", component: CartComponent },
       { path: "shipping", component: ShippingComponent },
       { path: "resume", component: ResumeComponent },
-      { path: "graphic", component: GraphicDesignComponent }
+      { path: "graphic", component: GraphicDesignComponent },
+      { path: "profile", component: ProfileComponent },
+      { path: "experience", component: ExperienceComponent },
+      { path: "education", component: EducationComponent }
     ])
   ],
   declarations: [
