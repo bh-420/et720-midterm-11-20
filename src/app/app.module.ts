@@ -3,6 +3,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+import { LightboxModule } from "ngx-lightbox";
 
 import {
   AccordionModule,
@@ -41,6 +42,7 @@ import { GraphicDesignComponent } from "./graphic-design/graphic-design.componen
 @NgModule({
   imports: [
     AlertModule.forRoot(),
+    LightboxModule,
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
